@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "BPG Studio";
+  src: url("./assets/fonts/bpg_le_studio_02_caps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KA Kolheti";
+  src: url("./assets/fonts/ka_kolheti-57340025775.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("/calibri-font-family/calibri-font-family/calibri-regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("/calibri-font-family/calibri-font-family/calibri-bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("/calibri-font-family/calibri-font-family/calibri-italic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("/calibri-font-family/calibri-font-family/calibri-bold-italic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --color-bg: #ebe8df;
+  --color-bg-dark: #0f1c2e;
+  --color-text: #1a1a1a;
+  --color-text-dark: #b8c5d6;
+  --color-heading: #2a3a1c;
+  --color-heading-dark: #e8eef5;
+  --color-gold: #b49530;
+  --color-gold-light: #cca83e;
+  --color-sage: #6b7e54;
+  --color-sage-light: #7e9068;
+  --color-sage-dark: #4e6138;
+  --color-white: #faf8f3;
+  --color-black: #000000;
+  --color-card: #f7f5f0;
+  --color-card-dark: #1a2942;
+  --color-gray-100: #e6e3d9;
+  --color-gray-100-dark: #1e2f47;
+  --color-gray-200: #ddd9d0;
+  --color-gray-200-dark: #2a3f5f;
+  --color-gray-300: #d0d0cc;
+  --color-gray-400: #7a7a76;
+  --color-gray-500: #4a4a46;
+
+  --font-heading: "BPG Studio", serif;
+  --font-body: "KA Kolheti", "Inter", sans-serif;
+  --font-secondary: "Calibri", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.dark body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+}
